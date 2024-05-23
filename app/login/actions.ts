@@ -15,13 +15,13 @@ const checkEmailExists = async (email: string) => {
   const user = await db.user.findUnique({
     where: {
       email,
-    },
+    }, 
     select: {
       id: true,
     },
   });
   // if(user){
-  //   return true
+  //  return true
   // } else {
   //   return false
   // }
