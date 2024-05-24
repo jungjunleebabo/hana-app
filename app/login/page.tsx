@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import FormButton from "@/components/button";
 import FormInput from "@/components/input";
 import SocialLogin from "@/components/social-login";
@@ -20,7 +21,7 @@ export default function LogIn() {
         </h1>
       </div>
       <main className="flex flex-col items-center justify-center w-full h-full top-0">
-      <form action={dispatch} className="w-full px-2.5 mt-[-2.1875rem] mb-[2.1875rem] ">
+      <form action={dispatch} className="w-full px-2.5 mt-[-2.1875rem] mb-4">
         <FormInput
           name="email"
           type="email"
@@ -38,19 +39,23 @@ export default function LogIn() {
         />
         <FormButton text="로그인" />
       </form>
-
+      <div className="w-full mb-4 flex items-center justify-center" >
+        <span className="text-whColor-6 text-sm font-bold tracking-[-0.02rem]">계정이 없으신가요?</span>
+        <Link href="/create-account">
+        <span className="text-primary-1 text-sm font-bold tracking-[-0.02rem] px-2.5">가입하기</span>
+        </Link>
+      </div> 
+      <div className="w-full h-px bg-neutral-500 mb-4"/>
       <SocialLogin />
       </main>
-
-
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
         <Image
           src="/img/login-bg01.svg"
           width={140}
           height={140}
           alt="로그인 배경 이미지1"
           objectFit="cover"
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 z-0"
         />
         <Image
           src="/img/login-bg02.svg"
@@ -58,15 +63,15 @@ export default function LogIn() {
           width={100}
           height={100}
           objectFit="cover"
-          className="absolute top-0 right-0"
+          className="absolute top-0 right-0 z-0"
         />
         <Image
           src="/img/login-bg03.svg"
           alt="로그인 배경 이미지3"
-          width={250}
-          height={250}
+          width={140}
+          height={140}
           objectFit="cover"
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 z-0"
         />
         <Image
           src="/img/login-bg04.svg"
@@ -74,7 +79,7 @@ export default function LogIn() {
           width={50}
           height={50}
           objectFit="cover"
-          className="absolute bottom-[2.375rem] right-0"
+          className="absolute bottom-[2.375rem] right-0 z-0"
         />
       </div>
     </div>

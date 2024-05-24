@@ -48,7 +48,7 @@ const formSchema = z
     if (user) {
       ctx.addIssue({
         code: "custom",
-        message: "This username is already taken",
+        message: "닉네임이 이미 존재 합니다",
         path: ["username"],
         fatal: true,
       });
@@ -67,7 +67,7 @@ const formSchema = z
     if (user) {
       ctx.addIssue({
         code: "custom",
-        message: "This email is already taken",
+        message: "이메일이 이미 존재 합니다",
         path: ["email"],
         fatal: true,
       });
@@ -75,7 +75,7 @@ const formSchema = z
     }
   })
   .refine(checkPasswords, {
-    message: "Both passwords should be the same!",
+    message: "비밀번호가 다릅니다",
     path: ["confirm_password"],
   });
 
@@ -105,6 +105,6 @@ export async function createAccount(prevState: any, formData: FormData) {
     const session = await getSession();
     session.id = user.id;
     await session.save();
-    redirect("/profile");
+    redirect("/index-page");
   }
 }
