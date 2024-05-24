@@ -93,8 +93,8 @@ export default async function Profile() {
         <button className="absolute bottom-4 right-5">
           <Image
                 src="/img/main-more-btn.svg"
-                width={15}
-                height={15}
+                width={14}
+                height={14}
                 alt="더보기"
                 objectFit="cover"
           />
