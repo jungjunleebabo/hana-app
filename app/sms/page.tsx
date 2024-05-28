@@ -14,6 +14,7 @@ const initialState = {
 export default function SMSLogin() {
   const [state, dispatch] = useFormState(smsLogIn, initialState);
   return (
+  <body className="w-full h-full text-white bg-black font-NotoSansKR">
     <div className="flex flex-col gap-10 py-8 px-6">
       <div className="flex flex-col gap-2 *:font-medium">
         <h1 className="text-2xl">SMS Log in</h1>
@@ -41,5 +42,6 @@ export default function SMSLogin() {
         <Button text={state.token ? "Verify Token" : "Send Verification SMS"} />
       </form>
     </div>
+  </body>
   );
 }

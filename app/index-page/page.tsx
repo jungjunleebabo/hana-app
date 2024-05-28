@@ -14,7 +14,8 @@ async function getUser() {
       return user;
     }
   }
-  notFound();
+
+ // notFound();
 }
 
 export default async function Profile() {
@@ -30,7 +31,7 @@ export default async function Profile() {
     <header className="flex flex-col flex-wrap items-end px-3.5">
          <div>
          <Image
-            src="/img/menu.svg"
+            src="/img/icon/icon-menu.svg"
             width={25}
             height={25}
             alt="menu"
@@ -46,7 +47,7 @@ export default async function Profile() {
       <section className="relative">
       
       <div className="px-8 pt-4 pb-8">
-        <span className="text-whColor-6 text-sm font-bold tracking-[-0.02rem]">Have a GoodDay:) {user?.username}</span>
+        <span className="text-whColor-6 text-sm font-bold tracking-[-0.02rem]">Have a GoodDay 💖  {user?.username}</span>
         <h1 className="pt-3 text-29 font-bold leading-10 tracking-[-0.17rem]">
             오늘도 당신의<br />
             새로운 일상을 <span className="text-primary-1">검색</span>하세요
@@ -57,7 +58,7 @@ export default async function Profile() {
           <input type="search" placeholder="검색어를 입력하세요" className="w-full h-[53px] pl-6 pr-11 bg-black border border-white rounded-[50px] placeholder-whColor-6 focus:border-primary-8" />
           <button className="absolute w-6 h-6 top-3.5 right-12">
               <Image
-                src="/img/main-search-btn.svg"
+                src="/img/main/main-search-btn.svg"
                 width={25}
                 height={25}
                 alt="검색하기"
@@ -95,7 +96,7 @@ export default async function Profile() {
         </ul>
         <button className="absolute bottom-4 right-5">
           <Image
-                src="/img/main-more-btn.svg"
+                src="/img/main/main-more-btn.svg"
                 width={14}
                 height={14}
                 alt="더보기"

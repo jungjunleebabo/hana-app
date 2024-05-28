@@ -61,7 +61,7 @@ export default function LogIn() {
       </main>
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none -z-50">
         <Image
-          src="/img/login-bg01.svg"
+          src="/img/login/login-bg01.svg"
           width={140}
           height={140}
           alt="로그인 배경 이미지1"
@@ -69,7 +69,7 @@ export default function LogIn() {
           className="absolute top-0 left-0 w-fit"
         />
         <Image
-          src="/img/login-bg02.svg"
+          src="/img/login/login-bg02.svg"
           alt="로그인 배경 이미지2"
           width={100}
           height={100}
@@ -77,7 +77,7 @@ export default function LogIn() {
           className="absolute top-0 right-0 w-fit"
         />
         <Image
-          src="/img/login-bg03.svg"
+          src="/img/login/login-bg03.svg"
           alt="로그인 배경 이미지3"
           width={140}
           height={140}
@@ -85,7 +85,7 @@ export default function LogIn() {
           className="absolute bottom-0 left-0 w-fit"
         />
         <Image
-          src="/img/login-bg04.svg"
+          src="/img/login/login-bg04.svg"
           alt="로그인 배경 이미지4"
           width={50}
           height={50}
