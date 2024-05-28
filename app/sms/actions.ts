@@ -40,7 +40,8 @@ interface ActionState {
           error: result.error.flatten(),
         };
       } else {
-        redirect("/");
+        redirect("/index-page"); 
+        
       }
     }
   }

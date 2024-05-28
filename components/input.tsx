@@ -15,7 +15,7 @@ export default function Input({
     <div className="flex flex-col">
       <input
         name={name}
-        className="mb-3 w-full h-[3.125rem] px-[1.5625rem] rounded-[3.125rem] bg-whColor-10 placeholder-whColor-6 text-15 border-[0.0625rem] border-transparent focus:outline-0 focus:border-[0.0625rem] focus:border-primary-1"
+        className="input-round-style"
         {...rest}
       />
       {errors.map((error, index) => (

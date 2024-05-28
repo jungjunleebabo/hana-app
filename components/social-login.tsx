@@ -7,7 +7,7 @@ export default function SocialLogin() {
     <>
       <div className="flex items-center justify-center gap-5">
         
-        <Link href="/sms">
+        <Link href="/google">
           <Image 
           src="/img/icon-google.svg" 
           alt="Description of the image" 
@@ -17,7 +17,7 @@ export default function SocialLogin() {
           />
         </Link>
 
-        <Link href="/sms">
+        <Link href="/naver">
           <Image 
           src="/img/icon-naver.svg" 
           alt="Description of the image" 
@@ -27,7 +27,7 @@ export default function SocialLogin() {
           />
         </Link>
 
-        <Link href="/sms">
+        <Link href="/kakao">
           <Image 
           src="/img/icon-kakao.svg" 
           alt="Description of the image" 
