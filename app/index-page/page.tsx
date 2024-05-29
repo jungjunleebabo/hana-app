@@ -2,6 +2,7 @@ import db from "@/lib/db";
 import getSession from "@/lib/session";
 import { notFound, redirect } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 async function getUser() {
   const session = await getSession();
   if (session.id) {
@@ -29,7 +30,7 @@ export default async function Profile() {
   return (
   <div className="w-screen h-screen max-w-xl mx-auto my-0 overflow-hidden bg-black py-9">
     <header className="flex flex-col flex-wrap items-end px-3.5">
-         <div>
+        <Link href="/menu">
          <Image
             src="/img/icon/icon-menu.svg"
             width={25}
@@ -38,7 +39,7 @@ export default async function Profile() {
             objectFit="cover"
           />
           <p className="text-xs font-medium">menu</p>
-         </div>
+        </Link>
          <form action={logOut}>
           <button>Log out</button>
         </form>
@@ -52,8 +53,9 @@ export default async function Profile() {
             오늘도 당신의<br />
             새로운 일상을 <span className="text-primary-1">검색</span>하세요
         </h1>
+        
       </div>
-
+   
       <div className="relative px-6">
           <input type="search" placeholder="검색어를 입력하세요" className="w-full h-[53px] pl-6 pr-11 bg-black border border-white rounded-[50px] placeholder-whColor-6 focus:border-primary-8" />
           <button className="absolute w-6 h-6 top-3.5 right-12">
