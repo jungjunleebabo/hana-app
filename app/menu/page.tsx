@@ -93,7 +93,7 @@ export default async function Menu() {
             </div>
             <div className="pt-6 border-b border-whColor-10">
                 <div className="relative h-5 px-6 ">
-                    <Link href="/최근본영상">
+                    <Link href="/movie-list">
                         <h3 className="text-base font-bold">최근 본 영상</h3>
                         <Image 
                             src="/img/icon/icon-title-more.svg"
@@ -110,7 +110,7 @@ export default async function Menu() {
                         <li className="flex-1 float-left pr-2.5 w-[6.875rem]">
                             <Link href="/최근본영상더보기">
                                 <Image 
-                                    src="/img/thumbnail/menu-movie-thumbnail01.svg"
+                                    src="/img/thumbnail/menu-movie-thumbnail1.svg"
                                     width={140}
                                     height={140}
                                     alt="최근 본 영상 더보기"
@@ -123,7 +123,7 @@ export default async function Menu() {
                         <li className="flex-1 float-left pr-2.5 w-[6.875rem]">
                             <Link href="/최근본영상더보기">
                                 <Image 
-                                    src="/img/thumbnail/menu-movie-thumbnail02.svg"
+                                    src="/img/thumbnail/menu-movie-thumbnail2.svg"
                                     width={140}
                                     height={140}
                                     alt="최근 본 영상 더보기"
@@ -136,7 +136,7 @@ export default async function Menu() {
                         <li className="flex-1 float-left w-[6.875rem] m-0">
                             <Link href="/최근본영상더보기">
                                 <Image 
-                                    src="/img/thumbnail/menu-movie-thumbnail03.svg"
+                                    src="/img/thumbnail/menu-movie-thumbnail3.svg"
                                     width={140}
                                     height={140}
                                     alt="최근 본 영상 더보기"

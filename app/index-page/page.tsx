@@ -40,9 +40,6 @@ export default async function Profile() {
           />
           <p className="text-xs font-medium">menu</p>
         </Link>
-         <form action={logOut}>
-          <button>Log out</button>
-        </form>
       </header>
       <div className="flex flex-col justify-between h-full">
       <section className="relative">
